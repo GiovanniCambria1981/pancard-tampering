@@ -24,7 +24,7 @@ class ProductionConfig(Config):
     pass
 
 class DevelopmentConfig(Config):
-    DEBUG = True
+    DEBUG = False
 
     DB_NAME = "production-db"
     DB_USERNAME = "root"
