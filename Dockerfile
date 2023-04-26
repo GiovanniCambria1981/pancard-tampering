@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Define the entry point for the container
-CMD ["python", "app.py", "runserver", "0.0.0.0:8000"]
+CMD [ "flask", "run","--host","0.0.0.0","--port","8080"]
